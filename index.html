@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <title>Book List</title>
+</head>
+<body>
+    <!-- Create an input field for Title Author ISBN# , a submit button and the book list as a table, new books dynamically added can be a tr element -->
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Add Book</h1>
+        </div>
+
+        <div class="message">Book Added!</div>
+        
+        <form action="" class="book-form">
+            <div class="form-control">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-control">
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div class="form-control">
+                <label for="isbn#">ISBN#</label>
+                <input type="text" id="isbn#" name="isbn#" required>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div class="book-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Create it dynamically with Objects -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

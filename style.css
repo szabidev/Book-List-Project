@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%; /* 10px */
+  font-family: "Open Sans", sans-serif;
+  background-color: #e5e5e5;
+}
+
+.container {
+  width: 70%;
+  background-color: #8e9aaf;
+  border-radius: 5px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 200;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+/* make the class for the error message too with javascript */
+.message {
+  text-align: center;
+  font-size: 2rem;
+  background-color: green;
+  width: 60%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  /* visibility: hidden; */
+}
+
+.book-form {
+  width: 70%;
+}
+
+.form-control label {
+  font-size: 1.75rem;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 0.75rem 0;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+button {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  border-radius: 5px;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.book-table {
+  width: 70%;
+  background-color: #8e9aaf;
+  border-radius: 5px;
+  margin: 50px auto;
+}
+
+thead tr {
+  font-size: 1.5rem;
+}
