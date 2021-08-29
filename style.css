@@ -40,6 +40,16 @@ body {
   /* visibility: hidden; */
 }
 
+.error-message {
+  text-align: center;
+  font-size: 2rem;
+  background-color: red;
+  width: 60%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  /* visibility: hidden; */
+}
+
 .book-form {
   width: 70%;
 }
@@ -75,6 +85,22 @@ button {
   margin: 50px auto;
 }
 
-thead tr {
+table {
+  table-layout: fixed;
+  width: 944px;
+  border-collapse: collapse;
+}
+
+thead tr th {
   font-size: 1.5rem;
+  font-weight: 200;
+  padding: 1rem 0;
+  border-bottom: 1px solid #495057;
+}
+
+.column {
+  /* not sure on text align */
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
 }
