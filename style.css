@@ -7,12 +7,12 @@
 body {
   font-size: 62.5%; /* 10px */
   font-family: "Open Sans", sans-serif;
-  background-color: #e5e5e5;
+  background-color: #f8f9fa;
 }
 
 .container {
   width: 70%;
-  background-color: #8e9aaf;
+  background-color: #ced4da;
   border-radius: 5px;
   margin: 50px auto;
   display: flex;
@@ -29,25 +29,25 @@ body {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
 }
-/* make the class for the error message too with javascript */
+
 .message {
   text-align: center;
-  font-size: 2rem;
-  background-color: green;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  background-color: #2a9d8f;
   width: 60%;
   margin-bottom: 1rem;
   border-radius: 5px;
-  /* visibility: hidden; */
 }
 
 .error-message {
   text-align: center;
-  font-size: 2rem;
-  background-color: red;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  background-color: #e71d36;
   width: 60%;
   margin-bottom: 1rem;
   border-radius: 5px;
-  /* visibility: hidden; */
 }
 
 .book-form {
@@ -67,7 +67,7 @@ body {
   font-size: 1.5rem;
 }
 
-button {
+.submit-btn {
   width: 100%;
   margin: 2rem 0;
   padding: 1rem 2rem;
@@ -78,16 +78,15 @@ button {
   text-transform: uppercase;
 }
 
-.book-table {
+.book-table-container {
   width: 70%;
-  background-color: #8e9aaf;
+  background-color: #ced4da;
   border-radius: 5px;
   margin: 50px auto;
 }
 
-table {
-  table-layout: fixed;
-  width: 944px;
+#book-table {
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -99,8 +98,30 @@ thead tr th {
 }
 
 .column {
-  /* not sure on text align */
-  text-align: center;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
+}
+
+.first-column {
+  width: 30%;
+}
+
+.second-column {
+  width: 40%;
+  overflow: hidden;
+}
+
+.third-column {
+  width: 20%;
+  text-align: center;
+}
+
+.fourth-column {
+  width: 10%;
+  text-align: center;
+}
+
+.fa-trash-alt {
+  color: #d62828;
+  cursor: pointer;
 }

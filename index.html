@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Book List</title>
 </head>
 <body>
@@ -18,41 +21,44 @@
             <h1 class="title">Add Book</h1>
         </div>
 
-        <div id="input-message" class="message">Book Added!</div>
+        <div id="input-message"></div>
         
         <form action="" class="book-form">
             <div class="form-control">
                 <label for="title">Title</label>
-                <input type="text" id="title" name="title" required>
+                <input type="text" id="title" name="title" required autocomplete="off">
             </div>
             <div class="form-control">
                 <label for="author">Author</label>
-                <input type="text" id="author" name="author" required>
+                <input type="text" id="author" name="author" required autocomplete="off">
             </div>
             <div class="form-control">
                 <label for="isbn#">ISBN#</label>
-                <input type="text" id="isbn" name="isbn#" required>
+                <input type="number" id="isbn" name="isbn#" required autocomplete="off">
             </div>
-            <button class="submit-btn">Submit</button>
+            <input type="submit" value ="Add Book" class="submit-btn" >
+            <!-- <button class="submit-btn">Submit</button> -->
         </form>
     </div>
-    <div class="book-table">
-        <table>
+    <div class="book-table-container">
+        <table id="book-table">
             <thead>
                 <tr>
                     <th>Title</th>
                     <th>Author</th>
                     <th>ISBN#</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
                 <!-- Create it dynamically with Objects -->
-                <tr>
+                <!-- <tr> -->
                     <!-- Create an X icon to delete books -->
-                    <td class="first-column column">1</td>
+                    <!-- <td class="first-column column">1</td>
                     <td class="second-column column">2</td>
                     <td class="third-column column">3</td>
-                </tr>
+                    <td class="fourth-column column"><i class="fas fa-trash-alt"></i></td>
+                </tr> -->
             </tbody>
         </table>
     </div>
